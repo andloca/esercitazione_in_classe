@@ -2,9 +2,12 @@ package esrcizio_cinque;
 
 public class classi {
     public static void main(String[] args) {
-        Persona p2 = new Persona("b", 5);
-        studente p1 = new studente("Andrea", 18, "1234");
-        p2.saluta();
-        p1.saluta();
+        Stampabile[] elenco = new Stampabile[2];
+
+        Persona p = new Persona("Marco", 45);
+        studente s = new studente("Luca", 21, "12345");
+
+        p.stampa();
+        s.stampa();
     }
 }

@@ -20,4 +20,9 @@ public class Persona {
     void saluta() {
         System.out.println("ciao, mi chiamo " + this.nome + " e ho " + this.eta + " anni");
     }
+
+    @Override
+    public void stampa() {
+        System.out.println("[Persona] Nome: " + nome + ", Età: " + eta);
+    }
 }

@@ -12,4 +12,9 @@ public class studente extends Persona {
     public void saluta() {
         System.out.println("Ciao, sono " + getNome() + ", ho " + getEta() + " anni e la mia matricola è " + matricola);
     }
+
+    @Override
+    public void stampa() {
+        System.out.println("[Studente] Nome: " + getNome() + ", Matricola: " + matricola);
+    }
 }
