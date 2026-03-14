@@ -1,16 +1,20 @@
 package esrcizio_cinque;
 
 public class Persona {
-    private String nome;
-    private int eta;
+    protected String nome;
+    protected int eta;
 
     public Persona(String n, int e) {
         this.nome = n;
-        setEta(e);
+        this.eta = e;
     }
 
     public String getNome() {
         return this.nome;
+    }
+
+    public int getEta() {
+        return this.eta;
     }
 
     void saluta() {
